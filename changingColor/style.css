@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+}
+.buttons button{
+    margin: 5vw 1vw;
+    padding: 2vw 3vw;
+    font-size: 2vw;
+    border-radius: 2vw;
+    border: none;
+    cursor: pointer;
+}
+.buttons button:hover{
+    background-color: black;
+    color: white;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+    height: 30vw;
+}
+.bg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+    height: 30vw;
+    background-color: rgb(199, 136, 136);
+}
+.border{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 38vw;
+    height: 18vw;
+    background-color: yellow;
+}
+.text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35vw;
+    height: 15vw;
+    font-size: 5vw;
+    text-align: center;
+    background-color: green;
+    text-shadow: 0.8vw 0.5vw 0.8vw white;
+}
+
+@media (max-width:400px) {
+    .buttons{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .buttons button{
+        margin: 5vw 1vw;
+        padding: 2vw 3vw;
+        font-size: 6vw;
+    }
+    .container{
+        width: 80vw;
+        height: 90vw;
+        margin-top: 10vw;
+    }
+    .bg{
+        height: 90vw;
+        width: 80vw;
+    }
+    .border{
+        height: 60vw;
+        width: 50vw;
+    }
+    .text{
+        height: 55vw;
+        width: 45vw;
+        font-size: 10vw;
+    }
+}
